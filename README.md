@@ -14,3 +14,9 @@ Número de telefone;
 Aulas de Jiu-jitsu;
 
 São informações reais correspondentes ao que foi passado pela academia.
+
+## Estrutura do Aplitativo
+
+Tela de Login:
+Email: usuario
+Senha: usuario123
