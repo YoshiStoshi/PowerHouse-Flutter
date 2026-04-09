@@ -18,41 +18,41 @@ São informações reais correspondentes ao que foi passado pela academia.
 
 ## Estrutura do Aplitativo
 
-powerhouse/
-├── assets/
-│ ├── logo.jpg
-│ └── Power.jpeg
-│
-├── lib/
-│ ├── main.dart
-│ │
-│ ├── providers/
-│ │ ├── Agendar_provedor.dart
-│ │ ├── Autentificacao.dart
-│ │ ├── Planos_provedor.dart
-│ │ └── Treino_provedor.dart
-│ │
-│ └── Telas/
-│ ├── Agendamento.dart
-│ ├── Esqueceu_senha.dart
-│ ├── Home.dart
-│ ├── Login.dart
-│ ├── Painel.dart
-│ ├── Planos.dart
-│ ├── Registre-se.dart
-│ ├── Sobre.dart
-│ └── Treinos.dart
-│
-├── android/
-├── ios/
-├── web/
-├── linux/
-├── macos/
-│
-├── test/
-│ └── widget_test.dart
-│
-├── pubspec.yaml
-├── pubspec.lock
-├── analysis_options.yaml
-└── README.md
+powerhouse/<br>
+├── assets/<br>
+│ ├── logo.jpg<br>
+│ └── Power.jpeg<br>
+│<br>
+├── lib/<br>
+│ ├── main.dart<br>
+│ │<br>
+│ ├── providers/<br>
+│ │ ├── Agendar_provedor.dart<br>
+│ │ ├── Autentificacao.dart<br>
+│ │ ├── Planos_provedor.dart<br>
+│ │ └── Treino_provedor.dart<br>
+│ │<br>
+│ └── Telas/<br>
+│ ├── Agendamento.dart<br>
+│ ├── Esqueceu_senha.dart<br>
+│ ├── Home.dart<br>
+│ ├── Login.dart<br>
+│ ├── Painel.dart<br>
+│ ├── Planos.dart<br>
+│ ├── Registre-se.dart<br>
+│ ├── Sobre.dart<br>
+│ └── Treinos.dart<br>
+│<br>
+├── android/<br>
+├── ios/<br>
+├── web/<br>
+├── linux/<br>
+├── macos/<br>
+│<br>
+├── test/<br>
+│ └── widget_test.dart<br>
+│<br>
+├── pubspec.yaml<br>
+├── pubspec.lock<br>
+├── analysis_options.yaml<br>
+└── README.md<br>
