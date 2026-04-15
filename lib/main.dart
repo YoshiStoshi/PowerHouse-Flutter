@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:device_preview/device_preview.dart';
 
 import 'providers/Autentificacao.dart';
 import 'providers/Treino_provedor.dart';
@@ -10,14 +11,17 @@ import 'Telas/Home.dart';
 
 void main() {
   runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => AuthProvider()),
-        ChangeNotifierProvider(create: (_) => WorkoutProvider()),
-        ChangeNotifierProvider(create: (_) => PlanProvider()),
-        ChangeNotifierProvider(create: (_) => ScheduleProvider()),
-      ],
-      child: const PowerHouseApp(),
+    DevicePreview(
+      enabled: !const bool.fromEnvironment('dart.vm.product'),
+      builder: (context) => MultiProvider(
+        providers: [
+          ChangeNotifierProvider(create: (_) => AuthProvider()),
+          ChangeNotifierProvider(create: (_) => WorkoutProvider()),
+          ChangeNotifierProvider(create: (_) => PlanProvider()),
+          ChangeNotifierProvider(create: (_) => ScheduleProvider()),
+        ],
+        child: const PowerHouseApp(),
+      ),
     ),
   );
 }
@@ -30,6 +34,8 @@ class PowerHouseApp extends StatelessWidget {
     return MaterialApp(
       title: 'Power House GYM',
       debugShowCheckedModeBanner: false,
+      builder: DevicePreview.appBuilder,
+      locale: DevicePreview.locale(context),
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFFE10600),
